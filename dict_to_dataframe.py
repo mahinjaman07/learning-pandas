@@ -6,12 +6,9 @@ data = {
     "Gender":["Male", "Male", "Male", "Male"]
 };
 
-series = pd.Series(data);
+df = pd.DataFrame(data);
 
-print(series);
+print(df)
 
-print(series[0]);
 
-series = pd.Series(data["Name"]);
 
-print(series[2]);
