@@ -1,13 +1,13 @@
-import pandas  as pd
+import pandas as pd
 import requests
 from io import StringIO
 
-url  = 'https://raw.githubusercontent.com/mahinjaman07/learning-pandas/master/bike.csv'
+url = 'https://raw.githubusercontent.com/mahinjaman07/learning-pandas/master/bike.csv';
 
 response = requests.get(url)
 
-csv_content = StringIO(response.text)
+content = StringIO(response.text)
 
-df = pd.read_csv(csv_content)
+data = pd.read_csv(content)
 
-print(df.head())
+print(data.head())
